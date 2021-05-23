@@ -13,4 +13,4 @@
 </ol>
 </div>
 
-<div>Thanks to <a href="github.com/npv12/Noxx">Pranav</a> for helping!
+<div>Thanks to <a href="https://github.com/npv12/Noxx">Pranav</a> for helping!
