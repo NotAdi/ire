@@ -23,6 +23,11 @@ async def check_ban(client, message):
 async def ban(client, message):
     chat_id= message.chat.id
     user_id= -1
+    if message.chat.type in ("bot", "private"):
+        await message.edit_text("How am I supposed to ban someone in their PM?")
+        await asyncio.sleep(2)
+        await message.delete()
+        return
     if(message.reply_to_message):
         user_id= message.reply_to_message.from_user.id
     elif(len(message.command)>1):
@@ -44,6 +49,11 @@ async def ban(client, message):
 async def unban(client, message):
     chat_id= message.chat.id
     user_id= -1
+    if message.chat.type in ("bot","private"):
+        await message.edit_text("How am I supposed to unban someone in their PM?")
+        await asyncio.sleep(2)
+        await message.delete()
+        return
     if(message.reply_to_message):
         user_id= message.reply_to_message.from_user.id
     elif(len(message.command)>1):
@@ -61,3 +71,4 @@ async def unban(client, message):
         await message.delete()
     else:
         return
+        
