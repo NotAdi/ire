@@ -11,7 +11,6 @@
 <li> Enter phone number and code when asked </li>
 <li> Voila! </li>
 </ol>
-<h2> TEST </h2>
 </div>
 
 <div>Thanks to <a href="https://github.com/npv12/Noxx">Pranav</a> for helping!
